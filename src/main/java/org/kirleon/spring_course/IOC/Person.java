@@ -4,6 +4,7 @@ public class Person {
     private Pet pet;
     private String name;
     private String surname;
+    private int age;
 //    public Person(Pet pet){
 //        this.pet = pet;
 //        System.out.println("Person bean is created");
@@ -17,6 +18,7 @@ public class Person {
     }
     //pet ---> setPet
     public void setPet(Pet pet){
+        System.out.println("Class person: set pet");
         this.pet = pet;
     }
 
@@ -33,6 +35,20 @@ public class Person {
     }
 
     public void setSurname(String surname) {
+        System.out.println("Class person: set surname");
         this.surname = surname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        System.out.println("Class person: set age");
+        this.age = age;
+    }
+
+    public Pet getPet() {
+        return pet;
     }
 }
